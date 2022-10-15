@@ -1,0 +1,69 @@
+.container {
+  background-color: var(--color-grey-light-1);
+  max-width: 120rem;
+  margin: 8rem auto;
+  min-height: 60rem;
+  box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
+}
+
+.header {
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--line);
+  @media only screen and (max-width: $bp-medium) {
+    flex-wrap: wrap;
+    height: 11rem;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+}
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: var(--color-white);
+
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  padding: 4.5rem;
+  gap: 4rem;
+  @media only screen and (max-width: $bp-medium-large) {
+    flex-direction: column;
+  }
+}
+.description {
+  background-color: var(--color-white);
+  padding: 3.5rem;
+  flex: 0 0 60%;
+  box-shadow: var(--shadow-light);
+}
+.user-reviews {
+  // background-color: var(--color-white);
+  font-size: 1.3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
